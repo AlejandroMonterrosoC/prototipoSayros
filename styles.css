@@ -523,7 +523,7 @@ header {
 
 @media (min-width: 53.75rem) {
   .sayros-secondary-banner-sct {
-    background-image: url('imgsCarpet/bannersImgs/mainPage/bannerSayros2BigScreen2.jpg');
+    background-image: url('imgsCarpet/bannersImgs/mainPage/bannerSayros2BigScreen2.JPG');
     height: 90vh;
     color: var(--white-color);
   }
