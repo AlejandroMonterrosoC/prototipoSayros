@@ -1,0 +1,1142 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --black-color: rgb(12, 12, 12);
+  --black-color-50: rgba(12, 12, 12, 0.5);
+  --black-color-75: rgba(12, 12, 12, 0.75);
+  --white-color: rgb(248, 244, 244);
+  --white-color-75: rgba(248, 244, 244, 0.75);
+  --gray-color: rgb(128, 126, 126);
+  --dark-gray-color: rgb(59, 59, 59);
+  --font-text-small-screen: 1.125rem;
+  --font-text-medium-screen: 1.25rem;
+}
+
+body {
+  background-color: white;
+  color: var(--black-color);
+  font-family: "PT Sans", sans-serif;
+  font-size: var(--font-text-small-screen);  
+  letter-spacing: 0.075rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 3.25rem;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;  
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.7rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+p {
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.clothes-button {
+  width: 3rem;
+  height: 3rem;
+}
+
+ul {
+  list-style: none;
+  line-height: 1.6;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  font-size: 1rem;
+}
+
+label {
+  margin-block: 1rem;
+}
+
+input {
+  padding: 0.5em 1.5em;
+}
+
+@media (min-width: 53.75rem) {
+  body{
+    font-size: var(--font-text-medium-screen);
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+  h2 {
+  font-size: 3.25rem;
+  }
+  h3 {
+    font-size: 2.75rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 1.5rem;
+  }
+}
+
+/* +++++++++++++ Helper clases +++++++++++++ */
+.d-flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sct-main-wrapper {
+  max-width: 65rem;
+  width: 85vw;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.main-wrapper {
+  max-width: 65rem;
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.text-wrapper,
+.logo-wrapper {
+  max-width: 40rem;
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.small-wrapper {
+  max-width: 34rem;
+  margin: 0 auto;
+}
+
+.text-shadow-spacing {
+  text-align: center;
+  text-shadow: 2px 2px 10px var(--black-color);
+  letter-spacing: 0.25rem;
+}
+
+.logo-wrapper {
+  max-width: 15rem;  
+}
+
+.img-wrapper {
+  object-fit: cover;
+  object-position: center;
+  /* border-radius: 0.5rem;
+  overflow: hidden; */
+}
+
+.bck-prop {
+  background-position: center;
+  background-size: cover;
+}
+
+.banner-width {
+  max-width: 45rem;
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.btn-item,
+.btn-item-inverted {
+  display: inline-block;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  margin: 0 auto;
+  padding: 1em 2.5em;
+  border: 0.1rem solid transparent;
+}
+
+.btn-item-inverted {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+.btn-item:hover,
+.btn-item-inverted:hover {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  border-color: var(--black-color);
+  font-weight: bold;
+}
+
+.btn-item-inverted:hover {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  border-color: var(--white-color);
+}
+
+.sayros-svg-logo {
+  width: 8rem;
+  height: 4rem;
+}
+
+/* +++++++++++++ Header +++++++++++++ */
+header {
+  position: relative;
+  height: 10vh;   
+}
+
+.web-header-wrapper {
+  max-width: 75rem;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.sayros-company-logo-wrapper {
+  max-width: 8rem;
+}
+
+.sayros-nav-menu-icons-wrapper {
+  cursor: pointer;
+}
+
+.menuOpenBtn {
+  display: none;
+}
+
+.menuOpenBtn.active {
+  display: block;
+  transition: all 1s ease;
+}
+
+.menuCloseBtn {
+  display: none;
+}
+
+.menuCloseBtn.active {
+  display: block;
+}
+
+.menuOpenBtn.active:hover,
+.menuCloseBtn.active:hover {
+  rotate: 90deg;
+  transition: all 2s ease;
+}
+
+.sayros-nav-links-wrapper {
+  display: none;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  gap: 2rem;  
+}
+
+.sayros-nav-links-wrapper.active {
+  background-color: white;
+  position: absolute;
+  top: 10vh;
+  right: 0;
+  padding: 3rem 3rem;
+  display: flex;
+  box-shadow: -0.2rem 0.2rem 0.5rem var(--black-color);   
+}
+
+.sayros-social-media-logos-wrapper {
+  padding: 2rem 0 0 0;
+  border-top: 2px solid var(--black-color);
+}
+
+.sayros-nav-li + .sayros-nav-li {
+  margin-top: 1rem;
+}
+
+.sayros-nav-link:hover {
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--black-color);
+  transition: all 0.25s ease-out;
+}
+
+.sayros-nav-link.active {
+  font-weight: bold;
+}
+
+/*.sayros-nav-link::before {
+  background-color: var(--black-color);
+  height: 1rem;
+}
+
+.sayros-nav-link.active::before {
+  display: inline-block;
+  content: '';
+  width: 0.25rem;
+  height: 1rem;  
+  margin-left: 1rem;
+  border-radius: 0.25rem;
+  transition: var(--transition-normal);
+}*/
+
+.sayros-nav-link:active {
+  color: blue;
+}
+
+
+.social-media-logo__link + .social-media-logo__link {
+  margin-left: 1.5rem;
+}
+
+@media (min-width: 60rem) {
+  .sayros-nav-li + .sayros-nav-li {
+    margin-top: 0;
+  }
+  .menuOpenBtn.active {
+    display: none;
+  }
+  .menuCloseBtn.active {
+    display: none;
+  }
+  .sayros-nav-links-wrapper {
+    display: flex;  
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;  
+  }
+  .sayros-nav-links-wrapper.active {
+    position: relative;
+    top: 0;
+    padding: 0rem;    
+  }
+  .sayros-nav-ul {
+    display: flex;
+    gap: 1.25rem;
+  }
+  .sayros-social-media-logos-wrapper {
+    padding: 0 2rem 0 0;
+    border-top: none;
+    border-right: 2px solid var(--black-color);
+  }
+}
+
+/* +++++++++++++ Footer +++++++++++++ */
+.web-footer-wrapper {
+  padding: 2rem 0;
+}
+.sayros-social-media-logos-footer-wrapper {
+  padding-bottom: 1.25rem;
+  text-align: center;
+  border-bottom: 0.125rem solid var(--black-color);
+}
+
+.sayros-phone-link-footer-wrapper,
+.sayros-mail-link-footer-wrapper {
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.sayros-phone-link-footer-wrapper {
+  margin: 1rem 0;
+}
+
+.sayros-logo-footer-wrapper {
+  /* margin-bottom: 1.5rem; */
+  text-align: center;
+}
+
+.sayros-company-logo-footer-wrapper {
+  margin: 0 auto;
+}
+
+@media (min-width: 53.75rem) {
+  .web-footer-wrapper {
+    padding: 2rem 0 !important;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+/* ************** INDEX PAGE ************** */
+/* +++++++++++++ Main Banner Index page +++++++++++++ */
+.sayros-main-banner {
+  height: 90vh;
+  background-image: url('imgsCarpet/bannersImgs/mainPage/mainBannerSmallScreen.jpg');
+  justify-content: center;
+}
+
+.banner-wrapper {
+  color: var(--white-color);  
+  height: fit-content;
+}
+
+.banner-text-wrapper {
+  text-align: center;
+}
+
+.banner-text-p {
+  width: fit-content;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--white-color);
+}
+
+@media (min-width: 53.75rem) {
+  .sayros-main-banner {
+    background-image: url('imgsCarpet/bannersImgs/mainPage/mainBannerImg.jpeg');
+  }
+}
+
+/* +++++++++++++ Clients Section Index page +++++++++++++ */
+.clients-wrapper {
+  padding-block: 2rem;
+}
+
+.clients-items-wrapper {
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.client-wrapper {  
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.client-img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+}
+
+@media (min-width: calc(800 / 16 * 1rem)) {
+  .clients-items-wrapper {
+    gap: 2.5rem;
+  }
+  .client-img {
+    width: 8rem;
+    height: 8rem;    
+  }
+}
+
+/* +++++++++++++ Data Section Index page +++++++++++++ */
+.sayros-data-sct {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+.data-main-wrapper {
+  padding: 2rem 0;
+}
+
+.sct-text-desc-wrapper {
+  padding: 1rem 0;
+  text-align: justify;
+}
+
+.sct-data-wrapper {
+  max-width: 50rem;  
+  margin: 2rem auto 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.sct-data-item {
+  max-width: 18rem;
+}
+
+.sct-data-svg-title {
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.svg-wrapper > svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+@media (min-width: 36.25rem) {
+  .sct-main-wrapper {
+    padding: 4rem 0;
+  }
+  .sct-data-wrapper {  
+    gap: 4rem;
+  }  
+}
+
+@media (min-width: 62rem) {
+  .sct-data-wrapper {
+    justify-content: space-between;  
+    gap: 6rem;
+  }
+}
+
+/* +++++++++++++ Second Banner Section Index page +++++++++++++ */
+.sayros-secondary-banner-sct {
+  background-image: url('imgsCarpet/bannersImgs/mainPage/bannerSayros2SmallScreen.jpg');  
+  height: 80vh;
+}
+
+.secondary-banner-text-wrapper {
+  background-color: rgba(239, 235, 235, 0.518);
+  padding: 2rem;
+  text-align: center;
+}
+
+.secondary-banner-text-p-wrapper {
+  margin-bottom: 1rem;
+}
+
+/* .secondary-banner-text-p {
+  -webkit-text-stroke: 0.5px var(--white-color);
+  font-size: 2.5rem;
+} */
+
+@media (min-width: 53.75rem) {
+  .sayros-secondary-banner-sct {
+    background-image: url('imgsCarpet/bannersImgs/mainPage/bannerSayros2BigScreen2.jpg');
+    height: 90vh;
+    color: var(--white-color);
+  }
+}
+
+/* +++++++++++++ Call to Action Section Index page +++++++++++++ */
+
+.call-to-action-text-box {
+  margin: 2rem 0;
+  text-align: justify;
+}
+
+.call-to-action-btn-wrapper {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.call-to-action-wrapp2 {
+  display: none;
+}
+
+/* ************** US PAGE ************** */
+/* +++++++++++++ Main Banner Section Us page +++++++++++++ */
+.nosotros-title-wrapper {
+  background-image: url('imgsCarpet/bannersImgs/nosotrosPage/usMainBannerSmall.JPG');
+  color: var(--white-color);
+  height: 90vh;
+  padding: 2rem 0;
+  align-items: flex-end;
+}
+
+.nosotros-title-text-wrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nosotros-small-span {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.historia-title {
+  font-size: 2.2rem;
+}
+
+.nosotros-historia-wrapper {
+  padding: 2rem;
+}
+
+.historia-p-wrapper {
+  margin-top: 1rem;
+  text-align: justify;
+}
+
+@media (min-width: 72.5rem) {
+  .nosotros-main-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+  }
+  .nosotros-title-wrapper {    
+    height: auto;
+    align-items: center;
+  }
+}
+
+/* +++++++++++++ Fundamentos Empresariales Section Us page +++++++++++++ */
+.fundamentos-empresariales-sct {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+ 
+.fundamentos-title {
+  margin-bottom: 2rem;
+}
+
+.fundamentos-wrapper {
+  max-width: 30rem;
+  margin: 0 auto;
+  flex-direction: column-reverse;  
+}
+
+.fundamentos-carousel-btns-wrapper {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.fundamentos-carousel-btn {
+  background: none;  
+  border: none;
+  cursor: pointer;
+}
+
+.fundamentos-carousel-slides-wrapper {
+  height: 22rem;
+}
+
+.fundamentos-item-wrapper {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  text-align: center;
+}
+
+.fundamentos-item-wrapper[data-active-slide] {
+  width: 100%;
+  height: fit-content;
+  opacity: 1;
+  z-index: 1;
+}
+
+.fundamentos-item-p {
+  text-align: justify;
+}
+
+.values-list {
+  padding: 0 0 0 1rem;
+  list-style: disc;
+}
+
+/* +++++++++++++ Equipo de trabajo Section Us page +++++++++++++ */
+.work-team-sct-wrapper {
+  padding-bottom: 0;
+  flex-direction: column;
+  gap: 2rem;  
+}
+
+.work-team-img-wrapper {
+  max-width: 28rem;
+}
+
+@media (min-width: 42rem) {
+  .work-team-sct-wrapper {
+    flex-direction: row;
+  }
+}
+
+/* ************** CONTACTO PAGE ************** */
+/* +++++++++++++ Main Banner Contacto page +++++++++++++ */
+.contacto-main-banner-sct {
+  background-image: url('imgsCarpet/bannersImgs/contactoPage/contactoBannerSmallScreen.jpg');
+  padding-block: 3rem;
+  color: var(--white-color);
+}
+
+.contacto-main-banner-wrapper {
+  background-color: rgba(33, 32, 32, 0.526);
+  padding: 1rem 0.25rem;
+  border-radius: 1rem;
+}
+
+.contacto-main-text-wrap {
+  margin-bottom: 1rem;
+}
+
+.contacto-main-links-wrapp {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contacto-main-link-a {
+  width: 18rem;
+  padding: 1em 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 72.5rem) {
+  .contacto-main-banner-sct {
+    background-image: url('imgsCarpet/bannersImgs/contactoPage/contactoBannerImg.jpg');
+    height: 90vh;
+    padding-block: 0;
+    align-items: center;
+    color: var(--white-color);
+  }
+  .contacto-main-banner-wrapper {
+    background-color: transparent;
+    padding: 0;
+  }
+  .contacto-main-text-wrap {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .contacto-main-links-wrapp {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .contacto-main-link-a {    
+    border-color: var(--black-color);
+  }
+}
+
+/* +++++++++++++ Form section Contacto page +++++++++++++ */
+.contacto-form-wrapper {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  margin-top: 1rem;
+  padding: 1rem;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.contacto-form {
+  flex: 1;
+}
+
+.contacto-input {
+  width: 100%;
+}
+
+.contacto-textarea {
+  width: 100%;
+  height: 10rem;
+  padding: 0.5rem;
+  line-height: 1.75;
+}
+
+.contacto-btn-submit {
+  display: block;
+  margin: 1rem auto 0;
+  font-size: 1rem;
+}
+
+.contacto-form-img-wrapper {
+  display: none;  
+  flex: 1;
+}
+
+@media (min-width: 72.5rem) {
+  .contacto-form-wrapper {
+    padding: 2rem;
+  }
+  .contacto-form-img-wrapper {
+    display: block;
+  }
+}
+
+/* +++++++++++++ contacto banner 2 Contacto page +++++++++++++ */
+.contacto-banner-sct {
+  background-image: url('imgsCarpet/bannersImgs/contactoPage/contactoBannerImg2.JPG');
+  height: 80vh;
+  align-items: flex-end;
+}
+
+.contacto-banner-wrapper {
+  background-color: var(--white-color);
+  width: min(40rem, 80vw);
+  margin: 0 auto;
+}
+
+.contacto-banner-logo {
+  width: fit-content;
+  margin: 1rem auto 0;
+}
+
+.contacto-banner-text-wrapper {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contacto-banner-span + .contacto-banner-span {
+  margin-left: 1rem;
+}
+
+/* ************** PRODUCTOS PAGE ************** */
+/* +++++++++++++ Main Banner Productos page +++++++++++++ */
+.productos-banner-sct {
+  background-image: url('imgsCarpet/bannersImgs/productosPage/productosMainBannerImg.jpg');
+  height: 90vh;
+  justify-content: center;
+}
+
+.productos-banner-text-wrapper {
+  color: var(--white-color);  
+}
+
+.productos-banner-title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+  font-size: 4rem;
+}
+
+.productos-banner-subtitle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 1.75rem;
+}
+
+@media (min-width: 72.5rem) {
+  .productos-banner-sct {
+    background-image: url('imgsCarpet/bannersImgs/productosPage/productosMainBannerImgBig.jpg');
+  }
+  .productos-banner-title {
+    font-size: 7rem;
+  }
+
+  .productos-banner-subtitle {
+    font-size: 2.75rem;
+  }
+}
+
+/* +++++++++++++ Productos on productos page +++++++++++++ */
+.producto-item-title {
+  padding: 2rem 2rem 0.5rem;
+}
+
+.producto-item-title::after {
+  display: block;
+  background-color: var(--black-color);
+  content: '';
+  width: 100%;
+  height: 0.15rem;
+  margin-top: 1rem;
+  border-radius: 0.15rem;
+}
+
+.producto-item-img-btn-wrapper {
+  padding: 4rem 3rem;
+}
+
+.producto-item-img-btn-wrapper[data-product="pantalones"] {
+  background-image: url('imgsCarpet/productosImgs/cardsProductosImgs/pantalonCardImg.jpg');
+}
+
+.producto-item-img-btn-wrapper[data-product="chumpas"] {
+  background-image: url('imgsCarpet/productosImgs/cardsProductosImgs/chumpaCardImg.jpg');
+}
+
+.producto-item-img-btn-wrapper[data-product="camisas-blusas"] {
+  background-image: url('imgsCarpet/productosImgs/cardsProductosImgs/camisasBlusasCardImg.jpg');
+}
+
+.producto-item-img-btn-wrapper[data-product="polos"] {
+  background-image: url('imgsCarpet/productosImgs/cardsProductosImgs/polosCardImg.jpg');
+}
+
+.producto-item-img-btn-wrapper[data-product="chalecos"] {
+  background-image: url('imgsCarpet/productosImgs/cardsProductosImgs/chalecosCardImg.jpg');
+}
+
+.producto-item-img-btn-wrapper[data-product="restaurantes"] {
+  background-image: url('imgsCarpet/productosImgs/cardsProductosImgs/restaurantesCardImg.jpg');
+}
+
+.producto-card-img {
+  display: none;
+  aspect-ratio:  1 /1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.producto-btn-ver-wrapper{
+  text-align: center;
+}
+
+@media (min-width: 50rem) {
+  .productos-wrapper {
+    columns: 2;
+  }
+}
+
+@media (min-width: 70rem) {
+  .productos-wrapper {
+    columns: 3;
+  }
+}
+
+/* +++++++++++++ Materiales Productos page +++++++++++++ */
+.materiales-sct {
+  padding: 2rem;
+}
+
+.materiales-imgs-collage-wrapper {
+  width: min(80vw, 40rem);
+  margin: 1rem auto;
+  columns: 2;
+}
+
+.materiales-collage-img-box:nth-child(even) {
+  margin-top: 1rem;
+}
+
+.materiales-text-p {
+  margin-top: 1rem;
+  text-align: justify;
+}
+
+@media (min-width: 72.5rem) {
+  .materiales-sct {
+    padding: 4rem;
+  }
+  .materiales-main-wrapper {
+    display: flex;
+  }
+  .materiales-text-wrapper {
+    flex: 1;
+    align-self: center;
+  }
+  .materiales-imgs-collage-wrapper {
+    flex: 1;
+    margin: 2rem;
+  }
+}
+
+/* +++++++++++++ Materiales Productos page +++++++++++++ */
+.productos-cta-text-p {
+  margin-block: 1rem 2rem;
+  text-align: justify;
+}
+
+.productos-cta-btn-whatsapp {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ************** PRODUCTO PAGE ************** */
+/* +++++++++++++ Imgs part producto page +++++++++++++ */
+.producto-sct {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.producto-main-wrapper {
+  flex-direction: column;
+}
+
+.prod-img-big-wrapper {
+  width: 90vw;
+  max-width: 24rem;
+  margin: 0 auto;
+}
+
+.prod-imgs-small-wrapper {
+  padding: 2rem 0;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.prod-img-small-wrapper {
+  width: 4rem;
+}
+
+.prod-img-big,
+.prod-img-small,
+.prod-rel-img {
+  aspect-ratio: 1 /1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.prod-description-p {
+  margin-block: 1rem;
+}
+
+.prod-btn-whatsapp-wrapper {
+  margin-bottom: 2rem;
+}
+
+.prod-caracteristicas-title {
+  margin-bottom: 1rem;
+}
+
+.prod-caract-ul {
+  flex-wrap: wrap;
+}
+
+.prod-caract-li {
+  background-color: var(--gray-color);
+  color: var(--white-color);
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+@media (min-width: 60rem) {
+  .producto-main-wrapper {
+    flex-direction: row;
+  }
+}
+
+/* +++++++++++++ Related products on producto page +++++++++++++ */
+.productos-relacionados-sct {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  padding: 2rem;
+}
+
+.prod-rel-link {
+  color: var(--white-color);
+}
+
+.prod-rel-title {
+  margin: 1rem 0 2rem;
+}
+
+.prod-rel-wrapper {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.prod-rel-img-wrapper {
+  width: 6rem;
+}
+
+.prod-rel-img {
+  border: 0.2rem solid var(--dark-gray-color);
+}
+
+@media (min-width: 50rem) {
+  .productos-relacionados-sct {
+    padding: 4rem;
+  }
+  .prod-rel-title {
+    text-align: center;
+  }
+  .prod-rel-wrapper {
+    gap: 4rem;
+  }
+}
+
+
+/* ************** ARTICULOS PAGE ************** */
+/* +++++++++++++ Main Banner Articulos page +++++++++++++ */
+.sayros-articulos-banner {
+  background-image: url('imgsCarpet/bannersImgs/articulosPage/articulosMainBannerImg.JPG');
+  height: 90vh;
+  align-items: flex-end;
+}
+
+.banner-articulos-text-wrapper {
+  background-color: var(--white-color-75);
+  padding: 1rem 1rem 4rem;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.banner-articulos-text-p {
+  margin-top: 1rem;
+  text-align: justify;
+}
+
+@media (min-width: 40rem) {
+  .banner-articulos-text-wrapper {
+    padding: 2rem 4rem 5rem;
+  }
+}
+
+/* +++++++++++++ articulos titles Articulos page +++++++++++++ */
+.articulos-wrapper {
+  margin-bottom: 2rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.articulos-links {
+  background-color: var(--gray-color);
+  max-width: 30rem;
+  margin: 0 auto 1rem;
+  padding: 1rem;
+  justify-content: center;
+  gap: 1rem;
+}
+.articulo-numero-wrapper {
+  background-color: var(--dark-gray-color);
+  color: var(--white-color);
+  width: 4rem;
+  height: 4rem;
+  justify-content: center;
+  font-size: 2rem;
+  border-radius: 2rem;
+}
+
+.articulo-texto-wrapper {
+  flex: 1;
+}
+
+@media (min-width: 50rem) {
+  .articulos-wrapper {
+    flex-direction: row;    
+  }
+}
+
+/* +++++++++++++ call to action Articulos page +++++++++++++ */
+.call-to-action-alternative {
+  background-image: url('imgsCarpet/bannersImgs/articulosPage/articulosSecondBannerImg.JPG');
+  height: 50vh;
+}
+
+.call-to-action-alternative-text-wrapper {
+  color: var(--white-color);
+}
+
+.call-to-action-alternative-text {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* ************** ARTICULO PAGE ************** */
+/* +++++++++++++ Articulo sct Articulos page +++++++++++++ */
+.articulo-title,
+.articulo-subtitle,
+.articulo-p {
+  margin-bottom: 1rem;
+}
+
+.articulo-img {
+  max-width: 16rem;
+  margin: 0 auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+}
