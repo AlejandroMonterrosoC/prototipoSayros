@@ -540,6 +540,7 @@ header {
   margin-bottom: 2rem;
   text-align: center;
 }
+
 .call-to-action-wrapp2 {
   display: none;
 }
@@ -763,13 +764,9 @@ header {
 
 .contacto-banner-wrapper {
   background-color: var(--white-color);
-  width: min(40rem, 80vw);
+  width: min(70rem, 90vw);
   margin: 0 auto;
-}
-
-.contacto-banner-logo {
-  width: fit-content;
-  margin: 1rem auto 0;
+  padding: 2rem 4rem;
 }
 
 .contacto-banner-text-wrapper {
@@ -777,8 +774,9 @@ header {
   text-align: center;
 }
 
-.contacto-banner-span + .contacto-banner-span {
-  margin-left: 1rem;
+.contacto-call-to-action-btn-wrapper > .btn-item {
+  width: fit-content;
+  padding: 1.25em 2.2em;
 }
 
 /* ************** PRODUCTOS PAGE ************** */
