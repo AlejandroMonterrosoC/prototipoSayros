@@ -606,6 +606,7 @@ header {
 
 .fundamentos-carousel-btns-wrapper {
   width: 100%;
+  margin-top: 2rem;
   justify-content: space-between;
 }
 
@@ -615,21 +616,13 @@ header {
   cursor: pointer;
 }
 
-.fundamentos-carousel-slides-wrapper {
-  height: 22rem;
-}
-
 .fundamentos-item-wrapper {
-  width: 0;
-  height: 0;
-  opacity: 0;
+  display: none;  
   text-align: center;
 }
 
 .fundamentos-item-wrapper[data-active-slide] {
-  width: 100%;
-  height: fit-content;
-  opacity: 1;
+  display: block;  
   z-index: 1;
 }
 
@@ -1090,6 +1083,7 @@ header {
   justify-content: center;
   gap: 1rem;
 }
+
 .articulo-numero-wrapper {
   background-color: var(--dark-gray-color);
   color: var(--white-color);
@@ -1102,6 +1096,10 @@ header {
 
 .articulo-texto-wrapper {
   flex: 1;
+}
+
+.articulo-texto-title {
+  height: 10rem;
 }
 
 @media (min-width: 50rem) {
