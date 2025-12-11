@@ -501,7 +501,7 @@ header {
 
 /* +++++++++++++ Second Banner Section Index page +++++++++++++ */
 .sayros-secondary-banner-sct {
-  background-image: url('imgsCarpet/bannersImgs/mainPage/bannerSayros2SmallScreen.png');  
+  background-image: url('imgsCarpet/bannersImgs/mainPage/bannerSayros2SmallScreen.jpg');  
   height: 80vh;
 }
 
@@ -542,11 +542,11 @@ header {
 /* ************** US PAGE ************** */
 /* +++++++++++++ Main Banner Section Us page +++++++++++++ */
 .nosotros-title-wrapper {
-  background-image: url('imgsCarpet/bannersImgs/nosotrosPage/usMainBannerSmall.JPG');
+  background-image: url('imgsCarpet/bannersImgs/nosotrosPage/nosotrosBanner.jpg');
   color: var(--white-color);
   height: 90vh;
   padding: 2rem 0;
-  align-items: flex-end;
+  /* align-items: flex-end; */
 }
 
 .nosotros-title-text-wrapper {
