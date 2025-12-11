@@ -68,16 +68,16 @@ function displayProduct(products) {
         </div>
         <div class="prod-imgs-small-wrapper d-flex-wrapper">
           <div class="prod-img-small-wrapper">
-            <img src="${item.imgs[1]}" alt="Sayros ${item.name}" class="prod-img-small">
+            <img src="${item.imgs[1]}" alt="Sayros ${item.name}" class="prod-img-small" data-img-id-1 onclick="changeImg('[data-img-id-1]')">
           </div>
           <div class="prod-img-small-wrapper">
-            <img src="${item.imgs[2]}" alt="Sayros ${item.name}" class="prod-img-small">
+            <img src="${item.imgs[2]}" alt="Sayros ${item.name}" class="prod-img-small" data-img-id-2 onclick="changeImg('[data-img-id-2]')">
           </div>
           <div class="prod-img-small-wrapper">
-            <img src="${item.imgs[3]}" alt="Sayros ${item.name}" class="prod-img-small">
+            <img src="${item.imgs[3]}" alt="Sayros ${item.name}" class="prod-img-small" data-img-id-3 onclick="changeImg('[data-img-id-3]')">
           </div>
           <div class="prod-img-small-wrapper">
-            <img src="${item.imgs[4]}" alt="Sayros ${item.name}" class="prod-img-small">
+            <img src="${item.imgs[4]}" alt="Sayros ${item.name}" class="prod-img-small" data-img-id-4 onclick="changeImg('[data-img-id-4]')">
           </div>
         </div>`;
       
