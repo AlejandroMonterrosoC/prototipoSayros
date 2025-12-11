@@ -501,12 +501,12 @@ header {
 
 /* +++++++++++++ Second Banner Section Index page +++++++++++++ */
 .sayros-secondary-banner-sct {
-  background-image: url('imgsCarpet/bannersImgs/mainPage/bannerSayros2SmallScreen.jpg');  
+  background-image: url('imgsCarpet/bannersImgs/mainPage/bannerSayros2SmallScreen.png');  
   height: 80vh;
 }
 
 .secondary-banner-text-wrapper {
-  background-color: rgba(239, 235, 235, 0.518);
+  color: var(--white-color);
   padding: 2rem;
   text-align: center;
 }
@@ -514,11 +514,6 @@ header {
 .secondary-banner-text-p-wrapper {
   margin-bottom: 1rem;
 }
-
-/* .secondary-banner-text-p {
-  -webkit-text-stroke: 0.5px var(--white-color);
-  font-size: 2.5rem;
-} */
 
 @media (min-width: 53.75rem) {
   .sayros-secondary-banner-sct {
