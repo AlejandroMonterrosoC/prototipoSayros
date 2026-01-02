@@ -773,6 +773,17 @@ header {
   padding: 1.25em 2.2em;
 }
 
+/* ************** FORM SENT PAGE ************** */
+/* +++++++++++++ Thanks Section Form Sent page +++++++++++++ */
+.form-sent-main-sct {
+  background-image: url('imgsCarpet/bannersImgs/formSentImgs/imgsCarpet/formSentImgs/formSentSmallScreen.webp');
+  height: 90vh;
+}
+
+.form-sent-text-p {
+  margin-block: 1rem;
+}
+
 /* ************** PRODUCTOS PAGE ************** */
 /* +++++++++++++ Main Banner Productos page +++++++++++++ */
 .productos-banner-sct {
