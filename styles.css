@@ -776,12 +776,20 @@ header {
 /* ************** FORM SENT PAGE ************** */
 /* +++++++++++++ Thanks Section Form Sent page +++++++++++++ */
 .form-sent-main-sct {
-  background-image: url('imgsCarpet/bannersImgs/formSentImgs/imgsCarpet/formSentImgs/formSentSmallScreen.webp');
+  background-image: url('imgsCarpet/bannersImgs/formSentImgs/formSentSmallScreen.webp');
   height: 90vh;
+  color: var(--white-color);
+}
+
+.form-sent-main-wrapper {
+  background-color: var(--black-color-50);
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 
 .form-sent-text-p {
-  margin-block: 1rem;
+  margin-block: 1rem 2rem;
+  text-align: center;
 }
 
 /* ************** PRODUCTOS PAGE ************** */
