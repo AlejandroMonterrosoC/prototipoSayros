@@ -94,21 +94,10 @@ function displayProduct(products) {
             <li class="prod-caract-li">${item.prodC[2]}</li>
             <li class="prod-caract-li">${item.prodC[3]}</li>
           </ul>
-        </div>`;
-      
-      /* for(let x = 0; x <= item.prodRel.length; x++) {
-
-        prodRel = `<div class="prod-rel-item-wrapper">
-          <div class="prod-rel-img">
-            <img src="" alt="Sayros " class="prod-rel-img">
-          </div>
-          <span class="prod-rel-name">${item.prodRel[x]}</span>
-        </div>`
-      } */
+        </div>`;      
     }
   });
 }
 
 imgsWrapper.innerHTML = prodImgs;
 textWrapper.innerHTML = prodText;
-/* zzzzzzzzz */
