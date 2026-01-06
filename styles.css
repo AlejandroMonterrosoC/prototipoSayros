@@ -163,9 +163,7 @@ input {
 
 .img-wrapper {
   object-fit: cover;
-  object-position: center;
-  /* border-radius: 0.5rem;
-  overflow: hidden; */
+  object-position: center;  
 }
 
 .bck-prop {
@@ -1144,9 +1142,41 @@ header {
 }
 
 .articulo-img {
-  max-width: 16rem;
-  margin: 0 auto;
-  aspect-ratio: 1 / 1;
+  /* max-width: 16rem;
+  margin: 0 auto; */  
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   object-position: center;
+}
+
+.article-table-wrapper {
+  overflow-x: scroll;
+}
+
+.article-table {
+  margin-block: 1.5rem;
+  border: 2px solid var(--black-color);  
+}
+
+.article-table > caption {
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.article-table > thead {
+  background-color: var(--black-color-75);
+  color: var(--white-color);
+}
+
+.article-table * th,
+.article-table * td {
+  padding: 0.5rem;
+  border: 1px solid var(--black-color);
+}
+
+@media (min-width: 34.125rem) {
+  .article-table-wrapper {
+    overflow-x: auto;
+  }
 }

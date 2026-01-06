@@ -47,30 +47,32 @@ const articles = [
     <h4 class="articulo-subtitle">Telas para climas cálidos y costeros</h4>
     <p class="articulo-p">En regiones con altas temperaturas y humedad, los uniformes deben ser ligeros y permitir la circulación del aire. El algodón y el lino son opciones naturales que aportan frescura, mientras que las mezclas sintéticas con tecnología anti sudor ofrecen resistencia y secado rápido.<br>En ambientes fríos, los uniformes deben proteger contra bajas temperaturas y mantener una apariencia profesional. Las mezclas de algodón con poliéster grueso, la lana ligera y los tejidos técnicos como el softshell son ideales para conservar calor y resistir condiciones adversas.</p>
     <img src="imgsCarpet/articleImgs/telasArticleImgs/telaAntiManchas.jpg" alt="Poliester tela" class="articulo-img">
-    <table>
-      <caption>
-        Tabla comparativa de telas por clima
-      </caption>
-      <thead>
-        <tr>
-          <th scope="col">Clima</th>
-          <th scope="col">Telas Recomendadas</th>
-          <th scope="col">Beneficios Principales</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">Cálido/Costero</th>
-          <td>Algodón ligero, lino, mezclas sintéticas</td>
-          <td>Frescura, transpirabilidad, secado rápido</td>
-        </tr>
-        <tr>
-          <th scope="row">Frío/Templado</th>
-          <td>Algodón + poliéster grueso, lana ligera, softshell</td>
-          <td>Calidez, resistencia, elegancia profesional</td>
-        </tr>        
-      </tbody>      
-    </table>
+    <div class="article-table-wrapper">
+      <table class="article-table">
+        <caption>
+          Tabla comparativa de telas por clima
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Clima</th>
+            <th scope="col">Telas Recomendadas</th>
+            <th scope="col">Beneficios Principales</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Cálido/Costero</th>
+            <td>Algodón ligero, lino, mezclas sintéticas</td>
+            <td>Frescura, transpirabilidad, secado rápido</td>
+          </tr>
+          <tr>
+            <th scope="row">Frío/Templado</th>
+            <td>Algodón + poliéster grueso, lana ligera, softshell</td>
+            <td>Calidez, resistencia, elegancia profesional</td>
+          </tr>        
+        </tbody>      
+      </table>
+    </div>
     <h4 class="articulo-subtitle">Conclusión</h4>
     <p class="articulo-p">Seleccionar la tela adecuada según el clima garantiza que los uniformes empresariales sean cómodos, duraderos y proyecten la identidad de la marca. Adaptar materiales a cada entorno no solo mejora el rendimiento del equipo, sino que refuerza la confianza y profesionalismo de la empresa.</p>
     <img src="imgsCarpet/articleImgs/telasArticleImgs/telaAlgodon.jpg" alt="Poliester tela" class="articulo-img">`,
