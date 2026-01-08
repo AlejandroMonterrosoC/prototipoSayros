@@ -89,17 +89,21 @@
         <p class="contacto-form-p-text">Transforma la imagen de tu empresa hoy mismo. Llena nuestro formulario y recibe una cotización individual de uniformes empresariales diseñados para proyectar confianza, estilo y profesionalismo en cada detalle.</p>
       </div>
       <div class="contacto-form-wrapper d-flex-wrapper">
-        <form action="" method="post" class="contacto-form small-wrapper">
+        <form action="https://formsubmit.co/alejandromonterrosocastellanos@hotmail.com" method="post" class="contacto-form small-wrapper">
           <label for="companyName">Nombre de empresa o institucion</label>
-          <input type="text" name="companyName" id="companyName" class="contacto-input" placeholder="Ej. Restaurante el asado">
+          <input type="text" name="companyName" id="companyName" class="contacto-input" placeholder="Ej. Restaurante el asado" required>
           <label for="userName">Nombre de contacto</label>
           <input type="text" name="userName" id="userName" class="contacto-input" required placeholder="Ej.Juan Perez">
           <label for="userPhone">Telefono de contacto</label>
           <input type="tel" name="userPhone" id="userPhone" class="contacto-input" required minlength="8" maxlength="12" placeholder="47546269">
           <label for="userEmail">Correo electronico</label>
-          <input type="email" name="userEmail" id="userEmail" class="contacto-input" placeholder="juan@correo.com">
+          <input type="email" name="userEmail" id="userEmail" class="contacto-input" placeholder="juan@correo.com" required>
           <label for="userComments">Aspectos importantes</label>
           <textarea name="userComments" id="userComments" class="contacto-textarea" placeholder="Informacion que consideras importante para tus uniformes"></textarea>
+          <input type="hidden" name="_subject" value="Formulrio pagina web">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_cc" value="sayros@hotmail.es">
+          <input type="hidden" name="_next" value="https://alejandromonterrosoc.github.io/prototipoSayros/formsent.html">
           <button type="submit" class="contacto-btn-submit btn-item-inverted">Enviar</button>
         </form>
         <div class="contacto-form-img-wrapper">
