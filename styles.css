@@ -7,20 +7,22 @@
 }
 
 :root {
-  --black-color: rgb(12, 12, 12);
-  --black-color-50: rgba(12, 12, 12, 0.5);
-  --black-color-75: rgba(12, 12, 12, 0.75);
-  --white-color: rgb(248, 244, 244);
-  --white-color-75: rgba(248, 244, 244, 0.75);
-  --gray-color: rgb(128, 126, 126);
-  --dark-gray-color: rgb(59, 59, 59);
+  --black-color: #0c0c0c;
+  --black-color-50: #0c0c0c80;
+  --black-color-75: #0c0c0cbf;
+  --white-color: #f8f4f4;
+  --white-color-75: #f8f4f4bf;
+  --gray-color: #a7a6a1;
+  --dark-gray-color: #bbbab5;
+  --light-gray-color: #e3e2dd;
+  --text-black-color: #000404;
   --font-text-small-screen: 1.125rem;
   --font-text-medium-screen: 1.25rem;
 }
 
 body {
   background-color: white;
-  color: var(--black-color);
+  color: var(--text-black-color);
   font-family: "PT Sans", sans-serif;
   font-size: var(--font-text-small-screen);  
   letter-spacing: 0.075rem;
@@ -54,6 +56,7 @@ h5 {
 }
 
 p {
+  font-size: 1.2rem;
   line-height: 1.6;
 }
 
