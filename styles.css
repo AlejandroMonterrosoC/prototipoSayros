@@ -89,8 +89,7 @@ ul {
 label,
 input,
 textarea {
-  display: block;
-  font-size: 1rem;
+  display: block;    
 }
 
 label {
@@ -99,6 +98,11 @@ label {
 
 input {
   padding: 0.5em 1.5em;
+}
+
+textarea {
+  font-family: "PT Sans", sans-serif;
+  letter-spacing: 0.075rem;
 }
 
 @media (min-width: 53.75rem) {
@@ -188,6 +192,7 @@ input {
   margin: 0 auto;
   padding: 1em 2.5em;
   border: 0.1rem solid transparent;
+  cursor: pointer;
 }
 
 .btn-item-inverted {
@@ -449,21 +454,16 @@ header {
 
 /* +++++++++++++ Data Section Index page +++++++++++++ */
 .sayros-data-sct {
-  background-color: var(--black-color);
-  color: var(--white-color);
-}
-
-.data-main-wrapper {
-  padding: 2rem 0;
+  background-color: var(--dark-gray-color);
 }
 
 .sct-text-desc-wrapper {
-  padding: 1rem 0;
+  margin-top: 1rem;
   text-align: justify;
 }
 
 .sct-data-wrapper {
-  max-width: 50rem;  
+  max-width: 45rem;
   margin: 2rem auto 0;
   flex-wrap: wrap;
   justify-content: center;
@@ -471,7 +471,7 @@ header {
 }
 
 .sct-data-item {
-  max-width: 18rem;
+  width: 18rem;
 }
 
 .sct-data-svg-title {
@@ -495,8 +495,7 @@ header {
 
 @media (min-width: 62rem) {
   .sct-data-wrapper {
-    justify-content: space-between;  
-    gap: 6rem;
+    justify-content: space-between;    
   }
 }
 
@@ -512,10 +511,6 @@ header {
   text-align: center;
 }
 
-.secondary-banner-text-p-wrapper {
-  margin-bottom: 1rem;
-}
-
 @media (min-width: 53.75rem) {
   .sayros-secondary-banner-sct {
     background-image: url('imgsCarpet/bannersImgs/mainPage/bannerSayros2BigScreen2.JPG');
@@ -525,19 +520,17 @@ header {
 }
 
 /* +++++++++++++ Call to Action Section Index page +++++++++++++ */
-
-.call-to-action-text-box {
-  margin: 2rem 0;
-  text-align: justify;
+.call-to-action-sct {
+  background-color: var(--dark-gray-color);
+  padding-block: 4rem;
 }
-
-.call-to-action-btn-wrapper {
-  margin-bottom: 2rem;
+.call-to-action-text-box {  
   text-align: center;
 }
 
-.call-to-action-wrapp2 {
-  display: none;
+.call-to-action-btn-box {
+  margin-top: 2rem;  
+  text-align: center;
 }
 
 /* ************** US PAGE ************** */
@@ -547,7 +540,6 @@ header {
   color: var(--white-color);
   height: 90vh;
   padding: 2rem 0;
-  /* align-items: flex-end; */
 }
 
 .nosotros-title-text-wrapper {
@@ -586,8 +578,7 @@ header {
 
 /* +++++++++++++ Fundamentos Empresariales Section Us page +++++++++++++ */
 .fundamentos-empresariales-sct {
-  background-color: var(--black-color);
-  color: var(--white-color);
+  background-color: var(--gray-color);
 }
  
 .fundamentos-title {
@@ -707,8 +698,7 @@ header {
 
 /* +++++++++++++ Form section Contacto page +++++++++++++ */
 .contacto-form-wrapper {
-  background-color: var(--black-color);
-  color: var(--white-color);
+  background-color: var(--dark-gray-color);
   margin-top: 1rem;
   padding: 1rem;
   align-items: flex-start;
@@ -758,7 +748,7 @@ header {
 }
 
 .contacto-banner-wrapper {
-  background-color: var(--white-color);
+  background-color: var(--dark-gray-color);
   width: min(70rem, 90vw);
   margin: 0 auto;
   padding: 2rem 4rem;
