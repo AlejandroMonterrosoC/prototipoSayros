@@ -958,6 +958,7 @@ header {
 
 .prod-img-small-wrapper {
   width: 4rem;
+  cursor: pointer;
 }
 
 .prod-img-big,
