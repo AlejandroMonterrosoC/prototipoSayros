@@ -991,11 +991,15 @@ header {
   padding-block: 2rem;
 }
 
+.image-consulting-text-p {
+  margin-block: 1rem;
+}
+
 .image-consulting-imgs-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: min(100%, 60rem);
-  margin: 2rem auto 0;
+  margin: 0 auto;
 }
 
 .image-consulting-img {  
@@ -1003,8 +1007,18 @@ header {
   object-fit: cover;
 }
 
+@media (min-width: 48.75rem) {
+  .image-consulting-sct {
+    padding-block: 3rem;
+  }
+}
+
 
 /* +++++++++++++ Products call to action Productos page +++++++++++++ */
+.productos-cta-title {
+  margin-top: 2rem;
+}
+
 .productos-cta-text-p {
   margin-block: 1rem 2rem;
   text-align: justify;
