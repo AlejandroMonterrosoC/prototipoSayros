@@ -581,11 +581,79 @@ header {
   }
 }
 
-/* +++++++++++++ Fundamentos Empresariales Section Us page +++++++++++++ */
-.fundamentos-empresariales-sct {
+/* +++++++++++++ Innovation Section Us page +++++++++++++ */
+.innovation-sct {
   background-color: var(--gray-color);
+  padding-block: 2rem;
 }
- 
+
+.innov-text-p {
+  margin-block: 1rem 2rem;
+}
+
+.innov-imgs-wrapper {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.innov-img-wrapper {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 10rem;
+}
+
+.innov-img-wrapper:nth-child(2) {
+  top: 5rem;
+  left: 30%;
+}
+
+.innov-img-wrapper:nth-child(3) {
+  top: 10rem;
+  left: 50%;
+}
+
+.innov-img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+@media (min-width: 48rem) {
+  .innov-main-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin: 0 auto;
+  }
+  .innov-imgs-wrapper {
+    height: auto;
+  }
+  .innov-img-wrapper {
+    width: 12rem;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  .innov-img-wrapper:nth-child(2) {
+    width: 14rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  .innov-img-wrapper:nth-child(3) {
+    top: 50%;
+    right: 0;
+    left: auto;
+    transform: translateY(-50%);
+  }
+}
+
+/* +++++++++++++ Fundamentos Empresariales Section Us page +++++++++++++ */
 .fundamentos-title {
   margin-bottom: 2rem;
 }
@@ -628,8 +696,11 @@ header {
 }
 
 /* +++++++++++++ Equipo de trabajo Section Us page +++++++++++++ */
+.work-team-sct {
+  background-color: var(--gray-color);
+}
+
 .work-team-sct-wrapper {
-  padding-bottom: 0;
   flex-direction: column;
   gap: 2rem;  
 }
@@ -914,7 +985,26 @@ header {
   }
 }
 
-/* +++++++++++++ Materiales Productos page +++++++++++++ */
+/* +++++++++++++ Image Consulting Productos page +++++++++++++ */
+.image-consulting-sct {
+  background-color: var(--gray-color);
+  padding-block: 2rem;
+}
+
+.image-consulting-imgs-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: min(100%, 60rem);
+  margin: 2rem auto 0;
+}
+
+.image-consulting-img {  
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+
+/* +++++++++++++ Products call to action Productos page +++++++++++++ */
 .productos-cta-text-p {
   margin-block: 1rem 2rem;
   text-align: justify;
