@@ -12,8 +12,8 @@
   --black-color-75: #0c0c0cbf;
   --white-color: #f8f4f4;
   --white-color-75: #f8f4f4bf;
-  --gray-color: #a7a6a1;
-  --dark-gray-color: #bbbab5;
+  --dark-gray-color: #c6c5bd;
+  --gray-color: #bbbab5;
   --light-gray-color: #e3e2dd;
   --text-black-color: #000404;
   --font-text-small-screen: 1.125rem;
@@ -883,6 +883,14 @@ header {
 }
 
 /* +++++++++++++ Productos on productos page +++++++++++++ */
+.productos-wrapper {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 1rem;
+}
 .producto-item-title {
   padding: 2rem 2rem 0.5rem;
 }
@@ -921,6 +929,10 @@ header {
   background-image: url('imgsCarpet/productosImgs/cardsProductosImgs/chalecosCardImg.jpg');
 }
 
+.producto-item-img-btn-wrapper[data-product="sueteres"] {
+  background-image: url('imgsCarpet/productosImgs/cardsProductosImgs/sueterCardImg.webp');
+}
+
 .producto-item-img-btn-wrapper[data-product="restaurantes"] {
   background-image: url('imgsCarpet/productosImgs/cardsProductosImgs/restaurantesCardImg.jpg');
 }
@@ -936,7 +948,7 @@ header {
   text-align: center;
 }
 
-@media (min-width: 50rem) {
+/* @media (min-width: 50rem) {
   .productos-wrapper {
     columns: 2;
   }
@@ -946,7 +958,7 @@ header {
   .productos-wrapper {
     columns: 3;
   }
-}
+} */
 
 /* +++++++++++++ Materiales Productos page +++++++++++++ */
 .materiales-sct {

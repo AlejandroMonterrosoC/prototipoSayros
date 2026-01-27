@@ -46,6 +46,14 @@ const productos = [
     prodC: 'Dependiendo del producto y la selección de telas, se obtienen ventajas únicas como control de humedad, repelencia, propiedades antimanchas y tecnología stretch. Estas características aseguran comodidad, durabilidad y resistencia.',
     imgs: ['imgsCarpet/productosImgs/restaurantesImgs/DSC00106.jpg', 'imgsCarpet/productosImgs/restaurantesImgs/DSC00111.jpg', 'imgsCarpet/productosImgs/restaurantesImgs/DSC00115.jpg', 'imgsCarpet/productosImgs/restaurantesImgs/DSC00116.jpg', 'imgsCarpet/productosImgs/restaurantesImgs/DSC00119.jpg'],
     prodRel: ['id:2', 'id:3', 'id:4', 'id:5']
+  },
+  {
+    id: '7',
+    name: 'Suéteres',
+    prodDesc: 'Nuestros suéteres combinan elegancia y comodidad con materiales de alta calidad que garantizan durabilidad. Diseñados para proyectar una sólida imagen empresarial, ofrecen estilo profesional y funcionalidad, adaptándose a distintas jornadas laborales mientras refuerzan la identidad corporativa con confianza y coherencia visual.',
+    prodC: 'Dependiendo del producto y la selección de telas, se obtienen ventajas únicas como control de humedad, repelencia, propiedades antimanchas y tecnología stretch. Estas características aseguran comodidad, durabilidad y resistencia.',
+    imgs: ['imgsCarpet/productosImgs/sueteresImgs/sueter1.webp', 'imgsCarpet/productosImgs/sueteresImgs/sueter2.webp', 'imgsCarpet/productosImgs/sueteresImgs/sueter3.webp', 'imgsCarpet/productosImgs/sueteresImgs/sueter1.webp', 'imgsCarpet/productosImgs/sueteresImgs/sueter2.webp'],
+    prodRel: ['id:2', 'id:3', 'id:4', 'id:5']
   }
 ];
 
