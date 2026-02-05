@@ -829,7 +829,7 @@ header {
 /* ************** FORM SENT PAGE ************** */
 /* +++++++++++++ Thanks Section Form Sent page +++++++++++++ */
 .form-sent-main-sct {
-  background-image: url('imgsCarpet/bannersImgs/formSentImgs/formSentSmallScreen.webp');
+  background-image: url('imgsCarpet/bannersImgs/formSentImgs/formSentSmallScreen.jpg');
   height: 90vh;
   color: var(--white-color);
 }
@@ -838,6 +838,10 @@ header {
   background-color: var(--black-color-50);
   padding: 1rem;
   border-radius: 0.5rem;
+}
+
+.form-sent-text-title {
+  text-align: center;
 }
 
 .form-sent-text-p {
@@ -947,18 +951,6 @@ header {
 .producto-btn-ver-wrapper{
   text-align: center;
 }
-
-/* @media (min-width: 50rem) {
-  .productos-wrapper {
-    columns: 2;
-  }
-}
-
-@media (min-width: 70rem) {
-  .productos-wrapper {
-    columns: 3;
-  }
-} */
 
 /* +++++++++++++ Materiales Productos page +++++++++++++ */
 .materiales-sct {
