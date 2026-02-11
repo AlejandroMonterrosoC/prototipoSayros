@@ -437,7 +437,8 @@ header {
   margin-top: 2rem;
 }
 
-.client-img-wrapper { 
+.client-img-wrapper {
+  background-color: var(--white-color);
   width: min(50vw, 10rem);
 }
 
