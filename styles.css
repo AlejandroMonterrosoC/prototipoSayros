@@ -799,6 +799,11 @@ header {
   flex: 1;
 }
 
+.contacto-form-img {
+  aspect-ratio: 0.75;
+  object-fit: cover;
+}
+
 @media (min-width: 72.5rem) {
   .contacto-form-wrapper {
     padding: 2rem;
