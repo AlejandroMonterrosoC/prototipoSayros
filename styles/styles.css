@@ -16,8 +16,8 @@
   --gray-color: #bbbab5;
   --light-gray-color: #e3e2dd;
   --text-black-color: #000404;
-  --font-text-small-screen: 1.125rem;
-  --font-text-medium-screen: 1.25rem;
+  --font-text-small-screen: 1.18rem;
+  --font-text-medium-screen: 1.3rem;
 }
 
 body {
@@ -36,7 +36,8 @@ h5 {
   font-size: 3.25rem;
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 700;  
+  font-weight: 700;
+  text-transform: capitalize;  
 }
 
 h2 {
@@ -55,8 +56,7 @@ h5 {
   font-size: 1.25rem;
 }
 
-p {
-  font-size: 1.2rem;
+p {  
   line-height: 1.6;
 }
 
@@ -303,25 +303,9 @@ header {
   font-weight: bold;
 }
 
-/*.sayros-nav-link::before {
-  background-color: var(--black-color);
-  height: 1rem;
-}
-
-.sayros-nav-link.active::before {
-  display: inline-block;
-  content: '';
-  width: 0.25rem;
-  height: 1rem;  
-  margin-left: 1rem;
-  border-radius: 0.25rem;
-  transition: var(--transition-normal);
-}*/
-
 .sayros-nav-link:active {
   color: blue;
 }
-
 
 .social-media-logo__link + .social-media-logo__link {
   margin-left: 1.5rem;
@@ -399,7 +383,7 @@ header {
 /* +++++++++++++ Main Banner Index page +++++++++++++ */
 .sayros-main-banner {
   height: 90vh;
-  background-image: url('imgsCarpet/bannersImgs/mainPage/mainBannerSmallScreen.jpg');
+  background-image: url('../imgsCarpet/bannersImgs/mainPage/mainBannerSmallScreen.jpg');
   justify-content: center;
 }
 
@@ -421,7 +405,7 @@ header {
 
 @media (min-width: 53.75rem) {
   .sayros-main-banner {
-    background-image: url('imgsCarpet/bannersImgs/mainPage/mainBannerImg.jpeg');
+    background-image: url('../imgsCarpet/bannersImgs/mainPage/mainBannerImg.jpeg');
   }
 }
 
@@ -507,7 +491,7 @@ header {
 
 /* +++++++++++++ Second Banner Section Index page +++++++++++++ */
 .sayros-secondary-banner-sct {
-  background-image: url('imgsCarpet/bannersImgs/mainPage/bannerSayros2SmallScreen.jpg');  
+  background-image: url('../imgsCarpet/bannersImgs/mainPage/bannerSayros2SmallScreen.jpg');  
   height: 80vh;
 }
 
@@ -519,7 +503,7 @@ header {
 
 @media (min-width: 53.75rem) {
   .sayros-secondary-banner-sct {
-    background-image: url('imgsCarpet/bannersImgs/mainPage/bannerSayros2BigScreen2.JPG');
+    background-image: url('../imgsCarpet/bannersImgs/mainPage/bannerSayros2BigScreen2.JPG');
     height: 90vh;
     color: var(--white-color);
   }
@@ -542,7 +526,7 @@ header {
 /* ************** US PAGE ************** */
 /* +++++++++++++ Main Banner Section Us page +++++++++++++ */
 .nosotros-title-wrapper {
-  background-image: url('imgsCarpet/bannersImgs/nosotrosPage/nosotrosBanner.jpg');
+  background-image: url('../imgsCarpet/bannersImgs/nosotrosPage/nosotrosBanner.jpg');
   color: var(--white-color);
   height: 90vh;
   padding: 2rem 0;
@@ -719,7 +703,7 @@ header {
 /* ************** CONTACTO PAGE ************** */
 /* +++++++++++++ Main Banner Contacto page +++++++++++++ */
 .contacto-main-banner-sct {
-  background-image: url('imgsCarpet/bannersImgs/contactoPage/contactoBannerSmallScreen.jpg');
+  background-image: url('../imgsCarpet/bannersImgs/contactoPage/contactoBannerSmallScreen.jpg');
   padding-block: 3rem;
   color: var(--white-color);
 }
@@ -741,7 +725,7 @@ header {
 
 @media (min-width: 72.5rem) {
   .contacto-main-banner-sct {
-    background-image: url('imgsCarpet/bannersImgs/contactoPage/contactoBannerImg.jpg');
+    background-image: url('../imgsCarpet/bannersImgs/contactoPage/contactoBannerImg.jpg');
     height: 90vh;
     padding-block: 0;
     align-items: center;
@@ -815,7 +799,7 @@ header {
 
 /* +++++++++++++ contacto banner 2 Contacto page +++++++++++++ */
 .contacto-banner-sct {
-  background-image: url('imgsCarpet/bannersImgs/contactoPage/contactoBannerImg2.JPG');
+  background-image: url('../imgsCarpet/bannersImgs/contactoPage/contactoBannerImg2.JPG');
   height: 80vh;
   align-items: flex-end;
 }
@@ -835,7 +819,7 @@ header {
 /* ************** FORM SENT PAGE ************** */
 /* +++++++++++++ Thanks Section Form Sent page +++++++++++++ */
 .form-sent-main-sct {
-  background-image: url('imgsCarpet/bannersImgs/formSentImgs/formSentSmallScreen.jpg');
+  background-image: url('../imgsCarpet/bannersImgs/formSentImgs/formSentSmallScreen.jpg');
   height: 90vh;
   color: var(--white-color);
 }
@@ -858,7 +842,7 @@ header {
 /* ************** PRODUCTOS PAGE ************** */
 /* +++++++++++++ Main Banner Productos page +++++++++++++ */
 .productos-banner-sct {
-  background-image: url('imgsCarpet/bannersImgs/productosPage/productosMainBannerImg.jpg');
+  background-image: url('../imgsCarpet/bannersImgs/productosPage/productosMainBannerImg.jpg');
   height: 90vh;
   justify-content: center;
 }
@@ -881,7 +865,7 @@ header {
 
 @media (min-width: 72.5rem) {
   .productos-banner-sct {
-    background-image: url('imgsCarpet/bannersImgs/productosPage/productosMainBannerImgBig.jpg');
+    background-image: url('../imgsCarpet/bannersImgs/productosPage/productosMainBannerImgBig.jpg');
   }
   .productos-banner-title {
     font-size: 7rem;
@@ -920,31 +904,31 @@ header {
 }
 
 .producto-item-img-btn-wrapper[data-product="pantalones"] {
-  background-image: url('imgsCarpet/productosImgs/cardsProductosImgs/pantalonCardImg.jpg');
+  background-image: url('../imgsCarpet/productosImgs/cardsProductosImgs/pantalonCardImg.jpg');
 }
 
 .producto-item-img-btn-wrapper[data-product="chumpas"] {
-  background-image: url('imgsCarpet/productosImgs/cardsProductosImgs/chumpaCardImg.jpg');
+  background-image: url('../imgsCarpet/productosImgs/cardsProductosImgs/chumpaCardImg.jpg');
 }
 
 .producto-item-img-btn-wrapper[data-product="camisas-blusas"] {
-  background-image: url('imgsCarpet/productosImgs/cardsProductosImgs/camisasBlusasCardImg.jpg');
+  background-image: url('../imgsCarpet/productosImgs/cardsProductosImgs/camisasBlusasCardImg.jpg');
 }
 
 .producto-item-img-btn-wrapper[data-product="polos"] {
-  background-image: url('imgsCarpet/productosImgs/cardsProductosImgs/polosCardImg.jpg');
+  background-image: url('../imgsCarpet/productosImgs/cardsProductosImgs/polosCardImg.jpg');
 }
 
 .producto-item-img-btn-wrapper[data-product="chalecos"] {
-  background-image: url('imgsCarpet/productosImgs/cardsProductosImgs/chalecosCardImg.jpg');
+  background-image: url('../imgsCarpet/productosImgs/cardsProductosImgs/chalecosCardImg.jpg');
 }
 
 .producto-item-img-btn-wrapper[data-product="sueteres"] {
-  background-image: url('imgsCarpet/productosImgs/cardsProductosImgs/sueterCardImg.webp');
+  background-image: url('../imgsCarpet/productosImgs/cardsProductosImgs/sueterCardImg.webp');
 }
 
 .producto-item-img-btn-wrapper[data-product="restaurantes"] {
-  background-image: url('imgsCarpet/productosImgs/cardsProductosImgs/restaurantesCardImg.jpg');
+  background-image: url('../imgsCarpet/productosImgs/cardsProductosImgs/restaurantesCardImg.jpg');
 }
 
 .producto-card-img {
@@ -1156,7 +1140,7 @@ header {
 /* ************** ARTICULOS PAGE ************** */
 /* +++++++++++++ Main Banner Articulos page +++++++++++++ */
 .sayros-articulos-banner {
-  background-image: url('imgsCarpet/bannersImgs/articulosPage/articulosMainBannerImg.JPG');
+  background-image: url('../imgsCarpet/bannersImgs/articulosPage/articulosMainBannerImg.JPG');
   height: 90vh;
   align-items: flex-end;
 }
@@ -1223,7 +1207,7 @@ header {
 
 /* +++++++++++++ call to action Articulos page +++++++++++++ */
 .call-to-action-alternative {
-  background-image: url('imgsCarpet/bannersImgs/articulosPage/articulosSecondBannerImg.JPG');
+  background-image: url('../imgsCarpet/bannersImgs/articulosPage/articulosSecondBannerImg.JPG');
   height: 50vh;
 }
 
@@ -1241,12 +1225,14 @@ header {
 .articulo-title,
 .articulo-subtitle,
 .articulo-p {
-  margin-bottom: 1rem;
+  margin-block: 1rem;
 }
 
-.articulo-img {
-  /* max-width: 16rem;
-  margin: 0 auto; */  
+.articulo-title {
+  text-align: center;
+}
+
+.articulo-img {   
   aspect-ratio: 16 / 9;
   object-fit: cover;
   object-position: center;
