@@ -54,8 +54,8 @@
             <li class="sayros-nav-li"><a href="index.html" class="sayros-nav-link">Inicio</a></li>
             <li class="sayros-nav-li"><a href="nosotros.html" class="sayros-nav-link">Nosotros</a></li>
             <li class="sayros-nav-li"><a href="productos.html" class="sayros-nav-link">Productos</a></li>
-            <li class="sayros-nav-li"><a href="contacto.html" class="sayros-nav-link">Contactanos</a></li>
-            <li class="sayros-nav-li"><a href="articulos.html" class="sayros-nav-link active">Articulos</a></li>
+            <li class="sayros-nav-li"><a href="contacto.html" class="sayros-nav-link">Contáctanos</a></li>
+            <li class="sayros-nav-li"><a href="articulos.html" class="sayros-nav-link active">Artículos</a></li>
           </ul>
         </nav>
       </div>
@@ -65,8 +65,8 @@
   <section class="sayros-articulos-banner d-flex-wrapper bck-prop">
     <div class="banner-articulos-wrapper banner-width">      
       <div class="banner-articulos-text-wrapper">
-        <h2 class="banner-articulos-text-title">Articulos</h2> 
-        <p class="banner-articulos-text-p">Explora nuestros artículos y conoce lo que hace único a un uniforme institucional: detalles esenciales que fortalecen la identidad y proyectan el profesionalismo de tu marca.</p>       
+        <h2 class="banner-articulos-text-title">articulos</h2> 
+        <p class="banner-articulos-text-p">Explora nuestros articulos y conoce lo que hace único a un uniforme institucional: detalles esenciales que fortalecen la identidad y proyectan el profesionalismo de tu marca.</p>       
       </div>
     </div>
   </section>
@@ -85,7 +85,7 @@
 
   <section class="call-to-action-alternative bck-prop d-flex-wrapper">
     <div class="call-to-action-alternative-text-wrapper banner-width">
-      <p class="call-to-action-alternative-text">Da un salto de calidad y cotiza tus uniformes con nosotros, elegancia, durabilidad, comodidad todo con el mejor servicio al cliente, contactanos</p>
+      <p class="call-to-action-alternative-text">Da un salto de calidad y cotiza tus uniformes con nosotros, elegancia, durabilidad, comodidad todo con el mejor servicio al cliente, Contáctanos</p>
       <div class="call-to-action-btn-wrapper">
         <a href="contacto.html#contacto-form-sct" class="call-to-action-a-btn btn-item"><span>Cotiza Ahora</span></a>
       </div>
@@ -135,7 +135,11 @@
             <img src="imgsCarpet/logo/SayrosLogo2.jpeg" alt="Sayros Uniformes Logo">
           </picture>          
         </div>
-        <span class="footer-copyright-span">&copy Derechos reservados Sayros Uniformes, Totonicapan 2025</span>   
+        <p class="footer-copyright-span">&copy Derechos reservados Sayros Uniformes, Totonicapán <span class="footer-span-year"></span></p>
+        <script>
+          const spanYear = document.querySelector('.footer-span-year');
+          spanYear.textContent = new Date().getFullYear();
+        </script>
       </div>
     </div>
   </footer>

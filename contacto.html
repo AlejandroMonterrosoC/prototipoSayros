@@ -54,8 +54,8 @@
             <li class="sayros-nav-li"><a href="index.html" class="sayros-nav-link">Inicio</a></li>
             <li class="sayros-nav-li"><a href="nosotros.html" class="sayros-nav-link">Nosotros</a></li>
             <li class="sayros-nav-li"><a href="productos.html" class="sayros-nav-link">Productos</a></li>
-            <li class="sayros-nav-li"><a href="contacto.html" class="sayros-nav-link active">Contactanos</a></li>
-            <li class="sayros-nav-li"><a href="articulos.html" class="sayros-nav-link">Articulos</a></li>
+            <li class="sayros-nav-li"><a href="contacto.html" class="sayros-nav-link active">Contáctanos</a></li>
+            <li class="sayros-nav-li"><a href="articulos.html" class="sayros-nav-link">Artículos</a></li>
           </ul>
         </nav>
       </div>
@@ -66,7 +66,7 @@
     <div class="contacto-main-banner-wrapper sct-main-wrapper">
       <div class="contacto-main-text-links-wrapper">
         <div class="contacto-main-text-wrap">
-          <h2 class="contacto-main-text-title">Contactanos</h2>
+          <h2 class="contacto-main-text-title">Contáctanos</h2>
           <p class="contacto-main-p-text">¿Hay algo en lo que podamos ayudarte? ¡Tu mensaje es importante para nosotros!</p>
           <!-- <svg width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="clothes-button">
             <circle cx="50" cy="50" r="45" fill="black" />
@@ -177,7 +177,11 @@
             <img src="imgsCarpet/logo/SayrosLogo2.jpeg" alt="Sayros Uniformes Logo">
           </picture>          
         </div>
-        <span class="footer-copyright-span">&copy Derechos reservados Sayros Uniformes, Totonicapan 2025</span>   
+        <p class="footer-copyright-span">&copy Derechos reservados Sayros Uniformes, Totonicapán <span class="footer-span-year"></span></p>
+        <script>
+          const spanYear = document.querySelector('.footer-span-year');
+          spanYear.textContent = new Date().getFullYear();
+        </script>
       </div>
     </div>
   </footer>

@@ -54,8 +54,8 @@
             <li class="sayros-nav-li"><a href="index.html" class="sayros-nav-link">Inicio</a></li>
             <li class="sayros-nav-li"><a href="nosotros.html" class="sayros-nav-link active">Nosotros</a></li>
             <li class="sayros-nav-li"><a href="productos.html" class="sayros-nav-link">Productos</a></li>
-            <li class="sayros-nav-li"><a href="contacto.html" class="sayros-nav-link">Contactanos</a></li>
-            <li class="sayros-nav-li"><a href="articulos.html" class="sayros-nav-link">Articulos</a></li>
+            <li class="sayros-nav-li"><a href="contacto.html" class="sayros-nav-link">Contáctanos</a></li>
+            <li class="sayros-nav-li"><a href="articulos.html" class="sayros-nav-link">Artículos</a></li>
           </ul>
         </nav>
       </div>
@@ -102,10 +102,10 @@
       <div class="fundamentos-wrapper d-flex-wrapper" data-carousel>
         <div class="fundamentos-carousel-btns-wrapper d-flex-wrapper">
           <button class="fundamentos-carousel-btn prev" data-fnd-carousel-btn="prev">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" stroke-width="5.5" stroke="currentColor" fill="none" class="duration-300 transform transition-all" style="width: 48px; height: 48px;"><path d="M45.15 57.47L19.88 30.84 45.15 6.58"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" stroke-width="5.5" stroke="currentColor" fill="none" class="duration-300 transform transition-all" style="width: 32px; height: 32px;"><path d="M45.15 57.47L19.88 30.84 45.15 6.58"></path></svg>
           </button>
           <button class="fundamentos-carousel-btn next" data-fnd-carousel-btn="next">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" stroke-width="5.5" stroke="currentColor" fill="none" class="duration-300 transform transition-all" style="width: 48px; height: 48px;"><path d="M18.86 57.47l25.26-26.63L18.86 6.58"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" stroke-width="5.5" stroke="currentColor" fill="none" class="duration-300 transform transition-all" style="width: 32px; height: 32px;"><path d="M18.86 57.47l25.26-26.63L18.86 6.58"></path></svg>
           </button>
         </div>
         <div class="fundamentos-carousel-slides-wrapper" data-slides-container>
@@ -187,7 +187,11 @@
             <img src="imgsCarpet/logo/SayrosLogo2.jpeg" alt="Sayros Uniformes Logo">
           </picture>          
         </div>
-        <span class="footer-copyright-span">&copy Derechos reservados Sayros Uniformes, Totonicapan 2025</span>   
+        <p class="footer-copyright-span">&copy Derechos reservados Sayros Uniformes, Totonicapán <span class="footer-span-year"></span></p>
+        <script>
+          const spanYear = document.querySelector('.footer-span-year');
+          spanYear.textContent = new Date().getFullYear();
+        </script>
       </div>
     </div>
   </footer>

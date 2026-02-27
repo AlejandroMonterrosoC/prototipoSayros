@@ -663,7 +663,6 @@ header {
 
 .fundamentos-item-wrapper {
   display: none;  
-  text-align: center;
 }
 
 .fundamentos-item-wrapper[data-active-slide] {
@@ -1137,8 +1136,8 @@ header {
   }
 }
 
-/* ************** ARTICULOS PAGE ************** */
-/* +++++++++++++ Main Banner Articulos page +++++++++++++ */
+/* ************** Articulos PAGE ************** */
+/* +++++++++++++ Main Banner articulos page +++++++++++++ */
 .sayros-articulos-banner {
   background-image: url('../imgsCarpet/bannersImgs/articulosPage/articulosMainBannerImg.JPG');
   height: 90vh;
@@ -1162,7 +1161,7 @@ header {
   }
 }
 
-/* +++++++++++++ articulos titles Articulos page +++++++++++++ */
+/* +++++++++++++ Articulos titles articulos page +++++++++++++ */
 .articulos-wrapper {
   margin-bottom: 2rem;
   flex-direction: column;
@@ -1221,7 +1220,7 @@ header {
 }
 
 /* ************** ARTICULO PAGE ************** */
-/* +++++++++++++ Articulo sct Articulos page +++++++++++++ */
+/* +++++++++++++ Articulo sct articulos page +++++++++++++ */
 .articulo-title,
 .articulo-subtitle,
 .articulo-p {

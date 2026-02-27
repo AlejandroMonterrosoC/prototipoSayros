@@ -54,8 +54,8 @@
             <li class="sayros-nav-li"><a href="index.html" class="sayros-nav-link">Inicio</a></li>
             <li class="sayros-nav-li"><a href="nosotros.html" class="sayros-nav-link">Nosotros</a></li>
             <li class="sayros-nav-li"><a href="productos.html" class="sayros-nav-link">Productos</a></li>
-            <li class="sayros-nav-li"><a href="contacto.html" class="sayros-nav-link active">Contactanos</a></li>
-            <li class="sayros-nav-li"><a href="articulos.html" class="sayros-nav-link">Articulos</a></li>
+            <li class="sayros-nav-li"><a href="contacto.html" class="sayros-nav-link active">Contáctanos</a></li>
+            <li class="sayros-nav-li"><a href="articulos.html" class="sayros-nav-link">Artículos</a></li>
           </ul>
         </nav>
       </div>
@@ -117,7 +117,11 @@
             <img src="imgsCarpet/logo/SayrosLogo2.jpeg" alt="Sayros Uniformes Logo">
           </picture>          
         </div>
-        <span class="footer-copyright-span">&copy Derechos reservados Sayros Uniformes, Totonicapan 2025</span>   
+        <p class="footer-copyright-span">&copy Derechos reservados Sayros Uniformes, Totonicapán <span class="footer-span-year"></span></p>
+        <script>
+          const spanYear = document.querySelector('.footer-span-year');
+          spanYear.textContent = new Date().getFullYear();
+        </script>
       </div>
     </div>
   </footer>
